@@ -1,28 +1,33 @@
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
 
+/* Reset default margin, padding, and box-sizing for all elements */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Base font size for better scaling */
 html {
-  font-size: 62.5%; /* Adjust base font size for better scaling */
+  font-size: 62.5%; 
   box-sizing: border-box;
 }
 
+/* Body styles */
 body {
   font-family: 'Press Start 2P', sans-serif;
   color: #eee;
   background-color: #222;
 }
 
+/* Header styles */
 header {
   position: relative;
   height: 35vh;
-  border-bottom: 7px solid #eee;
+  border-bottom: 7px solid #eee; /* White line at the bottom of the header */
 }
 
+/* Main content area styles */
 main {
   height: 65vh;
   color: #eee;
@@ -31,6 +36,7 @@ main {
   justify-content: space-around;
 }
 
+/* Styles for the input section */
 .input-section {
   width: 52rem;
   display: flex;
@@ -38,12 +44,14 @@ main {
   align-items: center;
 }
 
+/* Styles for the info section */
 .info-section {
   width: 52rem;
   font-size: 2rem;
   text-align: center;
 }
 
+/* Hidden number display */
 .hidden-number {
   color: #333;
   background: #eee;
@@ -57,6 +65,7 @@ main {
   transform: translate(-50%, 50%);
 }
 
+/* Info range position and style */
 .info-range {
   top: 2rem;
   right: 2rem;
@@ -64,12 +73,14 @@ main {
   position: absolute;
 }
 
+/* Reset button position and style */
 .reset {
   top: 2rem;
   left: 2rem;
   position: absolute;
 }
 
+/* User prediction input style */
 .user-prediction {
   color: inherit;
   border: 4px solid #eee;
@@ -83,6 +94,7 @@ main {
   background: none;
 }
 
+/* Button styles */
 .btn {
   color: #222;
   background-color: #eee;
@@ -93,23 +105,30 @@ main {
   font-family: inherit;
 }
 
+/* Button hover effect */
 .btn:hover {
   background-color: #ccc;
 }
 
+/* Status message styles */
 .status-msg {
   height: 3rem;
   margin-bottom: 8rem;
 }
 
+/* Current score styles */
 .current-score {
   margin-bottom: 2rem;
 }
 
+/* Best score styles */
 .best-score {
   margin-bottom: 2rem;
 }
 
+/* Media queries for responsive design */
+
+/* Adjust styles for screens smaller than 1028px wide */
 @media (max-width: 1028px) {
   .hidden-number {
     font-size: 4rem;
@@ -133,6 +152,7 @@ main {
   }
 }
 
+/* Adjust styles for screens smaller than 737px wide */
 @media (max-width: 737px) {
   .hidden-number {
     font-size: 3rem;
@@ -156,6 +176,7 @@ main {
   }
 }
 
+/* Adjust styles for screens smaller than 570px wide */
 @media (max-width: 570px) {
   .info-range {
     font-size: 1.2rem;
@@ -164,6 +185,7 @@ main {
   }
 }
 
+/* Hide specific elements for screens smaller than 305px wide */
 @media (max-width: 305px) {
   .info-range,
   .status-msg,
@@ -171,12 +193,12 @@ main {
   .best-score {
     display: none;
   }
-  }
+}
 
-
+/* Adjust styles for screens with a height less than 800px */
 @media (max-height: 800px) {
   header {
-    height: 25vh;
+    height: 25vh; /* Reduce header height */
   }
 
   .hidden-number {
@@ -201,9 +223,10 @@ main {
   }
 }
 
+/* Adjust styles for screens with a height less than 600px */
 @media (max-height: 600px) {
   header {
-    height: 20vh;
+    height: 20vh; /* Further reduce header height */
   }
 
   .hidden-number {
@@ -228,9 +251,10 @@ main {
   }
 }
 
+/* Adjust styles for screens with a height less than 400px */
 @media (max-height: 400px) {
   header {
-    height: 15vh;
+    height: 15vh; /* Further reduce header height */
   }
 
   .hidden-number {
@@ -255,18 +279,21 @@ main {
   }
 }
 
+/* Adjust styles for screens with a height less than 380px */
 @media (max-height: 380px) {
   header {
-    border-bottom: none;
+    border-bottom: none; /* Hide the bottom border of the header */
   }
-  .status-msg{
-    display: none;
-}
+
+  .status-msg {
+    display: none; /* Hide status message */
+  }
 }
 
+/* Adjust styles for screens with a height less than 239px */
 @media (max-height: 239px) {
   body::before {
-    content: "🤡 Increase Height of screen u clown 🤡";
+    content: "🤡 Increase Height of screen u clown 🤡"; /* Warning message */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -282,6 +309,7 @@ main {
     z-index: 1000;
   }
 
+  /* Hide all main content elements */
   header, main, .input-section, .info-section, .status-msg, .current-score, .best-score, .hidden-number, .user-prediction, .btn, .info-range, .reset {
     display: none;
   }
