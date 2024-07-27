@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A fun number guessing game where players try to guess the hidden number between 1 and 20.">
+    <meta name="keywords" content="number guessing game, fun games, guess the number, play online, NumberGuesser">
+    <meta name="author" content="AliHJMM">
+    <title>NumberGuesser</title>
+  </head>
+  <body>
+    <header>
+      <h1>Guess!</h1>
+      <p class="range-info">(Guess a number between 1 & 20)</p>
+      <button class="btn reset">Reset!</button>
+      <div class="hidden-number">?</div>
+    </header>
+    <main>
+      <section class="input-section">
+        <input type="number" class="user-guess" aria-label="Enter your guess" />
+        <button class="btn submit">Submit!</button>
+      </section>
+      <section class="info-section">
+        <p class="status-message">Make your guess...</p>
+        <p class="current-score">💯 Current Score: <span class="current-score">20</span></p>
+        <p class="best-score">
+          🥇 Best Score: <span class="best-score">0</span>
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
