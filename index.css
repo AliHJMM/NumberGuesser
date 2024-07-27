@@ -3,11 +3,11 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; /* Adjust base font size for better scaling */
   box-sizing: border-box;
 }
 
@@ -45,14 +45,13 @@ main {
 }
 
 /* ELEMENTS STYLE */
-
 .hidden-number {
   color: #333;
   background: #eee;
   position: absolute;
   width: 15rem;
   font-size: 6rem;
-  padding: 3rem 0rem;
+  padding: 3rem 0;
   left: 50%;
   bottom: 0;
   text-align: center;
@@ -111,3 +110,68 @@ main {
 .best-score {
   margin-bottom: 2rem;
 }
+
+/* Responsive Design */
+@media (max-width: 1028px) {
+  .hidden-number {
+    font-size: 4rem;
+    width: 10rem;
+    padding: 2rem 0;
+  }
+
+  .user-prediction {
+    width: 80%;
+    font-size: 4rem;
+    padding: 1.5rem;
+  }
+
+  .btn {
+    padding: 1.5rem 2rem;
+    font-size: 1.5rem;
+  }
+
+  .info-section {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 737px) {
+  .hidden-number {
+    font-size: 3rem;
+    width: 8rem;
+    padding: 1rem 0;
+  }
+
+  .user-prediction {
+    width: 100%;
+    font-size: 3rem;
+    padding: 1rem;
+  }
+
+  .btn {
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  .info-section {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 570px) {
+  .info-range {
+    font-size: 1.2rem;
+    top: 1rem;
+    right: 1rem;
+  }
+}
+
+@media (max-width: 305px) {
+  .info-range,
+  .status-msg,
+  .current-score,
+  .best-score {
+    display: none;
+  }
+  }
+
