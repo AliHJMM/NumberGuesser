@@ -314,3 +314,10 @@ main {
     display: none;
   }
 }
+
+/* Adjust styles for screens smaller than 950px wide and less than 380px tall */
+@media (max-width: 950px) and (max-height: 380px) {
+  .info-range {
+    display: none; /* Hide the info-range element */
+  }
+}
