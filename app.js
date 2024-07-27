@@ -44,3 +44,17 @@ const displayMsg = function (msg) {
     }
   
   });
+
+  document.querySelector('.reset').addEventListener('click', function () {
+    score = 20;
+    mysteryNumber = Math.trunc(Math.random() * 20) + 1;
+  
+    displayMsg('Start guessing...');
+    document.querySelector('.score').textContent = score;
+    document.querySelector('.hidden-number').textContent = '?';
+    document.querySelector('.user-prediction').value = '';
+  
+    document.querySelector('body').style.backgroundColor = '#222';
+    document.querySelector('.hidden-number').style.width = '15rem';
+  });
+  
