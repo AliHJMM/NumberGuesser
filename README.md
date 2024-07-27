@@ -30,4 +30,12 @@ The CSS includes responsive design adjustments for various screen sizes and heig
 
 
 ## Website Walkthrough
-![Main Page](images/CorrectNumber.png)
+![Main Page](images/Main.png)
+![Too High](images/TooHigh.png)
+![Too Low](images/TooLow.png)
+![Correct Number](images/CorrectNumber.png)
+![Negative Number](images/negativeNumber.png)
+![No Number](images/noNumber.png)
+![Responsive](images/responsive.png)
+![Small Screen Output](images/clown.png)
+![Game Over](images/GameOver.png)
