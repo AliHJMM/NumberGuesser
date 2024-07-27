@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Basic meta tags for character set, viewport, and SEO -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A fun number guessing game where players try to guess the hidden number between 1 and 20.">
-    <meta name="keywords" content="number guessing game, fun games, guess the number, play online, NumberGuesser">
-    <meta name="author" content="AliHJMM">
+    <meta name="description" content="A fun number guessing game where players try to guess the hidden number between 1 and 20." />
+    <meta name="keywords" content="number guessing game, fun games, guess the number, play online, NumberGuesser" />
+    <meta name="author" content="AliHJMM" />
     <title>NumberGuesser</title>
+    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="./styles/index.css" />
   </head>
   <body>
     <header>
+      <!-- Game instructions and controls -->
       <p class="info-range">(Guess a number between 1 & 20)</p>
       <button class="btn reset">Reset!</button>
       <div class="hidden-number">?</div>
     </header>
     <main>
       <section class="input-section">
+        <!-- User input and submit button -->
         <input type="number" class="user-prediction" aria-label="Enter your guess" />
         <button class="btn submit">Submit!</button>
       </section>
       <section class="info-section">
+        <!-- Game status and scores -->
         <p class="status-msg">Make your guess...</p>
         <p class="current-score">💯 Score: <span class="score">20</span></p>
-        <p class="best-score">
-          🥇 Best Score: <span class="best-score">0</span>
-        </p>        
+        <p class="best-score">🥇 Best Score: <span class="best-score">0</span></p>        
       </section>
     </main>
+    <!-- Link to JavaScript file -->
     <script type="module" src="./js/app.js"></script>
   </body>
 </html>
