@@ -41,8 +41,10 @@ main {
 .info-section {
   width: 52rem;
   font-size: 2rem;
+  text-align: center;
 }
 
+/* ELEMENTS STYLE */
 
 .hidden-number {
   color: #333;
@@ -103,5 +105,9 @@ main {
 }
 
 .current-score {
+  margin-bottom: 2rem;
+}
+
+.best-score {
   margin-bottom: 2rem;
 }
