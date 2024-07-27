@@ -2,12 +2,12 @@ import { displayMsg } from './ui.js';
 
 // Game variables
 let mysteryNumber = Math.trunc(Math.random() * 20) + 1, // Mystery number between 1 and 20
-    score = 20, // Initial score
+    score = 5, // Initial score
     highScore = 0; // Track highest score
 
 // Start a new game
 export const startNewGame = function () {
-  score = 20; // Reset score
+  score = 5; // Reset score
   mysteryNumber = Math.trunc(Math.random() * 20) + 1; // Generate new mystery number
 
   displayMsg('Make your guess...'); // Prompt user
