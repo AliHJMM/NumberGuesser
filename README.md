@@ -27,3 +27,7 @@ The game starts by generating a random number between 1 and 20. The user inputs 
 ### CSS Styling
 
 The CSS includes responsive design adjustments for various screen sizes and heights. The background color and layout of elements adjust based on the screen height to ensure usability across devices.
+
+
+## Website Walkthrough
+![Main Page](images/CorrectNumber.png)
