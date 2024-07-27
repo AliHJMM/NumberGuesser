@@ -43,16 +43,6 @@ main {
   font-size: 2rem;
 }
 
-/* ELEMENTS STYLE */
-h1 {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  top: 52%;
-  left: 50%;
-  font-size: 4rem;
-  text-align: center;
-}
 
 .hidden-number {
   color: #333;
