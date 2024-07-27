@@ -44,7 +44,6 @@ main {
   text-align: center;
 }
 
-/* ELEMENTS STYLE */
 .hidden-number {
   color: #333;
   background: #eee;
@@ -111,7 +110,6 @@ main {
   margin-bottom: 2rem;
 }
 
-/* Responsive Design */
 @media (max-width: 1028px) {
   .hidden-number {
     font-size: 4rem;
@@ -175,3 +173,116 @@ main {
   }
   }
 
+
+@media (max-height: 800px) {
+  header {
+    height: 25vh;
+  }
+
+  .hidden-number {
+    font-size: 5rem;
+    width: 12rem;
+    padding: 2rem 0;
+  }
+
+  .user-prediction {
+    width: 90%;
+    font-size: 4rem;
+    padding: 2rem;
+  }
+
+  .btn {
+    padding: 1.5rem 2rem;
+    font-size: 1.5rem;
+  }
+
+  .info-section {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-height: 600px) {
+  header {
+    height: 20vh;
+  }
+
+  .hidden-number {
+    font-size: 4rem;
+    width: 10rem;
+    padding: 1.5rem 0;
+  }
+
+  .user-prediction {
+    width: 85%;
+    font-size: 3.5rem;
+    padding: 1.5rem;
+  }
+
+  .btn {
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  .info-section {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-height: 400px) {
+  header {
+    height: 15vh;
+  }
+
+  .hidden-number {
+    font-size: 3rem;
+    width: 8rem;
+    padding: 1rem 0;
+  }
+
+  .user-prediction {
+    width: 80%;
+    font-size: 3rem;
+    padding: 1rem;
+  }
+
+  .btn {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .info-section {
+    font-size: 1rem;
+  }
+}
+
+@media (max-height: 380px) {
+  header {
+    border-bottom: none;
+  }
+  .status-msg{
+    display: none;
+}
+}
+
+@media (max-height: 239px) {
+  body::before {
+    content: "🤡 Increase Height of screen u clown 🤡";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #eee;
+    font-size: 2rem;
+    text-align: center;
+    background-color: #222;
+    z-index: 1000;
+  }
+
+  header, main, .input-section, .info-section, .status-msg, .current-score, .best-score, .hidden-number, .user-prediction, .btn, .info-range, .reset {
+    display: none;
+  }
+}
