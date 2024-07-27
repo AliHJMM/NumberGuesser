@@ -7,22 +7,23 @@
     <meta name="keywords" content="number guessing game, fun games, guess the number, play online, NumberGuesser">
     <meta name="author" content="AliHJMM">
     <title>NumberGuesser</title>
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
     <header>
       <h1>Guess!</h1>
-      <p class="range-info">(Guess a number between 1 & 20)</p>
+      <p class="info-range">(Guess a number between 1 & 20)</p>
       <button class="btn reset">Reset!</button>
       <div class="hidden-number">?</div>
     </header>
     <main>
       <section class="input-section">
-        <input type="number" class="user-guess" aria-label="Enter your guess" />
+        <input type="number" class="user-prediction" aria-label="Enter your guess" />
         <button class="btn submit">Submit!</button>
       </section>
       <section class="info-section">
-        <p class="status-message">Make your guess...</p>
-        <p class="current-score">💯 Current Score: <span class="current-score">20</span></p>
+        <p class="status-msg">Make your guess...</p>
+        <p class="current-score">💯 Score: <span class="current-score">20</span></p>
         <p class="best-score">
           🥇 Best Score: <span class="best-score">0</span>
         </p>
