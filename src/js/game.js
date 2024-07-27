@@ -1,8 +1,6 @@
 import { displayMsg } from './ui.js';
 
-let mysteryNumber = Math.trunc(Math.random() * 20) + 1;
-let score = 20;
-let highScore = 0;
+let mysteryNumber = Math.trunc(Math.random() * 20) + 1, score = 20, highScore = 0;
 
 export const startNewGame = function () {
   score = 20;
