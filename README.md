@@ -1,5 +1,8 @@
 # NumberGuesser
 
+# 💻 Tech Stack:
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+
 ## DESCRIPTION
 NumberGuesser is a simple web-based game where users try to guess a hidden number between 1 and 20. The game provides feedback on each guess, including whether the guess is too high, too low, or correct. Users can reset the game at any time to start a new round. The game keeps track of the current score and the highest score achieved.
 
