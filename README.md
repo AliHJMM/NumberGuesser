@@ -7,7 +7,7 @@
 NumberGuesser is a simple web-based game where users try to guess a hidden number between 1 and 20. The game provides feedback on each guess, including whether the guess is too high, too low, or correct. Users can reset the game at any time to start a new round. The game keeps track of the current score and the highest score achieved.
 
 ## AUTHORS
-- [Ali Hasan Jasim](https://github.com/AliHJMM)
+- [Ali Hasan](https://github.com/AliHJMM)
 
 ## Usage
 
